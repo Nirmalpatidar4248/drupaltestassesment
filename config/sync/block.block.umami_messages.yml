@@ -1,0 +1,22 @@
+uuid: 9c1206e0-5456-4b26-8ebb-77a128de0bce
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - umami
+_core:
+  default_config_hash: BiuNZYyLVSO0k0X_MWkay_4soJksK4EaVtQOmBZxtgI
+id: umami_messages
+theme: umami
+region: highlighted
+weight: -8
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

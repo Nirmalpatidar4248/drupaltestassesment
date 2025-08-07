@@ -1,0 +1,83 @@
+uuid: 05c0216f-d87e-497e-9b81-de9075cbb5d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ingredients
+    - field.storage.node.field_media_image
+    - field.storage.node.field_recipe_category
+    - field.storage.node.field_tags
+    - search_api.server.default_database_server
+  module:
+    - node
+id: recipe_index
+name: 'Recipe Index'
+description: ''
+read_only: false
+field_settings:
+  field_ingredients:
+    label: Ingredients
+    datasource_id: 'entity:node'
+    property_path: field_ingredients
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_ingredients
+  field_media_image:
+    label: 'Media Image'
+    datasource_id: 'entity:node'
+    property_path: field_media_image
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_media_image
+  field_recipe_category:
+    label: 'Recipe category'
+    datasource_id: 'entity:node'
+    property_path: field_recipe_category
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_recipe_category
+  field_tags:
+    label: Tags
+    datasource_id: 'entity:node'
+    property_path: field_tags
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - recipe
+    languages:
+      default: true
+      selected:
+        - en
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  custom_value: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  delete_on_fail: true
+  index_directly: true
+  track_changes_in_references: true
+server: default_database_server

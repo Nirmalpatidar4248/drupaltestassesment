@@ -1,0 +1,28 @@
+uuid: 92568614-5f4e-4574-b12d-0b73db285781
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets_summary.facets_summary.faceted_search_summary
+  module:
+    - facets_summary
+    - system
+  theme:
+    - umami
+id: umami_facetedsearchsummary
+theme: umami
+region: sidebar
+weight: 0
+provider: null
+plugin: 'facets_summary_block:faceted_search_summary'
+settings:
+  id: 'facets_summary_block:faceted_search_summary'
+  label: 'Faceted Search Summary'
+  label_display: visible
+  provider: facets_summary
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /faceted-search

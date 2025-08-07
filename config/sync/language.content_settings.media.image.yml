@@ -1,0 +1,18 @@
+uuid: c60659b8-f808-40bd-b731-a3bc49d1bbdc
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.image
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+_core:
+  default_config_hash: p53Q2UIlOG3WlSHQObzOfiCUvAchLZ-3Ft19kvO5nmI
+id: media.image
+target_entity_type_id: media
+target_bundle: image
+default_langcode: site_default
+language_alterable: true
