@@ -1,0 +1,12 @@
+
+/web/sites/default/files/
+/web/sites/default/settings.php
+/web/sites/default/settings.local.php
+/vendor/
+/node_modules/
+*.sql
+*.tar.gz
+*.zip
+/.idea/
+/.env
+/.DS_Store
