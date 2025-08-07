@@ -14,6 +14,13 @@ name: 'Faceted Search Summary'
 facet_source_id: 'search_api:views_page__faceted_search__page_1'
 only_visible_when_facet_source_is_visible: false
 processor_configs:
+  reset_facets:
+    processor_id: reset_facets
+    weights:
+      build: '30'
+    settings:
+      link_text: Reset
+      position: after
   show_text_when_empty:
     processor_id: show_text_when_empty
     weights:

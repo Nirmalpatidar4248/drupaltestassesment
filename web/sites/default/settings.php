@@ -833,6 +833,8 @@ $settings['state_cache'] = TRUE;
  */
 $settings['migrate_node_migrate_type_classic'] = FALSE;
 
+$settings['config_sync_directory'] = '../config/sync';
+
 /**
  * The default settings for migration sources.
  *
@@ -905,4 +907,4 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 //   'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
 //   'autoload' => 'core/modules/mysql\\src\\Driver\\Database\\mysql\\',
 // );
-$settings['config_sync_directory'] = 'sites/default/files/config_01JkMg_U9NkuGBRJvsuAflLZJiP2PbEYSKqkDu-6Peq6vXiXSdUl6_wLcPnp9MbHerXHCUYggw/sync';
+
