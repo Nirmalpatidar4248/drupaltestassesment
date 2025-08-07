@@ -36,3 +36,5 @@ $config['system.logging']['error_level'] = 'verbose';
 
 // Enable local development services.
 $settings['container_yamls'][] = DRUPAL_ROOT . '/sites/development.services.yml';
+
+$config_directories['sync'] = 'config/sync';
